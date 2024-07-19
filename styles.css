@@ -8,6 +8,32 @@
 body {
   background-color: #fffcf7;
 }
+ body .refrenceButton{
+  display: none;
+  width: 2.5rem;
+    height: 2.5rem;
+    color: #000;
+    background-color: #ff5b31;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+.refrenceButton.show {
+  display: block;
+}
+
+body .refrenceButton svg{
+  width: 1.8rem;
+    height: 1.8rem;
+    padding: 5px 0 0 5px;
+}
 nav {
   display: flex;
   /* justify-content: center; */
@@ -151,10 +177,18 @@ footer a:hover {
 footer li {
   list-style: none;
 }
-footer #Socials ul {
+footer #Socials {
   display: flex;
   gap: 1rem;
-  list-style: none;
+  color: white;
+}
+footer #Socials svg{
+  width: 1.4rem;
+  height: 1.4rem;
+  cursor: pointer;
+}
+footer #Socials svg:hover{
+  fill: #ff5b31;
 }
 footer h3 {
   color: #dedede;
@@ -222,7 +256,7 @@ footer .item6{
 
 @media screen and (max-width: 499px) {
   body {
-    background-color: #b8b8b8;
+    background-color: #fffcf7;
   }
   /* Mobile Responsive */
   nav #navDiv,
@@ -232,17 +266,22 @@ footer .item6{
 
   nav #drawerLogoDiv {
     display: inline-block;
-    max-width: fit-content;
+    /* max-width: fit-content; */
   }
   nav {
     display: flex;
-    width: 499px;
-    background-color: white;
+    width: 31.2rem;
+    justify-content:space-between;
+
   }
 
   nav #drawerImage {
-    max-width: 35px;
-    /* margin-right: -100px; */
+    width: 35px;
+    /* margin-right: -10rem; */
+  }
+
+  nav #navLogo{
+    padding: 1rem;
   }
 
   main .upperCard {
@@ -271,7 +310,8 @@ footer .item6{
     display: none;
   }
   #mobileFooter{
-    width: 480px;
+    width: 30.9rem;
+    /* max-width: 1089px; */
     display: flex;
     flex-direction: column;
     align-items: center;
