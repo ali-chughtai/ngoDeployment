@@ -29,3 +29,7 @@ window.addEventListener('scroll', handleScroll);
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+document.getElementById("SignUpButton").addEventListener('click', function() {
+    window.location.href = "./signUp.html";
+});

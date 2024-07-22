@@ -1,26 +1,254 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color: #FFFCF7;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fffcf7;
 }
-#mainDiv{
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 20.5px;
+  overflow-y: hidden;
+  height: 100vh;
+  margin: 3px;
+  overflow-x: hidden;
 }
-#authCard{
-    width: 100%;
-    max-width: 900px;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: white;
-    display: flex;
-    border: 2px solid black;
-    justify-content: center;
-    gap: 4rem;
+#authCard {
+  width: 100%;
+  max-width: 837px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 24px -2px #ff5b318f;
+  display: flex;
+  gap: 4rem;
 }
-.authElement{
+.authElement {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+.authCard_left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  width: 50%;
+  background-color: #fff;
+}
+.authCard_left .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.authCard_left .header svg {
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.0392156863);
+  color: #ff5b31;
+  padding: 7px;
+  width: 17px;
+  height: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.authCard_left .header h1 {
+  font-size: 35px;
+  /* font-weight:700; */
+  color: #6b2615;
+  line-height: 1;
+  font-family: Poppins, sans-serif;
+}
+
+.authCard_left .authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.authCard_left .authForm .authDropDown {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+}
+
+.authCard_left .authForm .nameDiv {
+  display: flex;
+  gap: 10px;
+}
+.authCard_left .authForm .selectBox {
+  display: block;
+  width: 100%;
+  padding: 0.4rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.authCard_left .authForm .label {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 3px;
+  color: #6b2615;
+  background-color: #fff;
+}
+
+.authCard_left .authForm .input {
+  width: 100%;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s;
+  font-family: sans-serif;
+}
+
+.authCard_left .authForm .hidePassword {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 15px;
+  top: 33px;
+}
+
+.authCard_left .authForm button {
+  background-color: #ff5b31;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  font-size: larger;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+.signup_or {
+  display: none;
+}
+
+.authCard_right {
+  width: 350px;
+  flex-grow: 1;
+  position: relative;
+}
+.authCard_right .banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.authCard_right .authRightCardButtons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  row-gap: 7px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.authCard_right .authRightCardButtons button {
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+  padding: 0.45rem 0.75rem;
+  font-weight: 400;
+}
+.authCard_right .authRightCardButtons button svg {
+  background-color: #000;
+}
+
+@media screen and (max-width: 450px) {
+  * {
+    background-color: #ffffff;
+  }
+  #mainDiv {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 0 0;
+  }
+  #authCard {
+    width: 93%;
+    max-width: 100%;
+    background-color: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .authCard_right .banner {
+    display: none;
+  }
+
+  .authCard_right {
+    width: 100%;
+  }
+
+  .authCard_left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .authCard_right .authRightCardButtons {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex !important;
+  }
+
+  hr {
+    margin: 0 0;
+    border: 1px;
+    color: black;
+    border-top: 1px solid;
+    opacity: 0.25;
+    width: 100%;
+  }
+
+  .signup_or {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+    width: 100%; /* Ensure it takes full width */
+    justify-content: center; /* Center align the content */
+  }
+
+  .authCard_right .authRightCardButtons button {
+    display: flex;
+    justify-content: center;
+  }
+  .authCard_left .authForm .input {
+    padding: 0.4rem 0;
+    }
 }

@@ -4,142 +4,162 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ngo World | Signup</title>
-    <link rel="stylesheet" href="./authStyles.css">
+    <link rel="stylesheet" href="./authStyles.css" />
   </head>
   <body>
     <div id="mainDiv">
-    <div id="authCard">
-      <!-- left side -->
-      <div>
-        <!-- button and sign up -->
-        <div style="display: flex; align-items: center; gap: 1rem;">
-          <svg
-            stroke="currentColor"
-            fill="currentColor"
-            stroke-width="0"
-            viewBox="0 0 512 512"
-            height="1em"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"
-            ></path>
-          </svg>
-          <h1>Sign up</h1>
-        </div>
-
-        <form action="#">
-          <select name="userType" id="userType">
-            <option value="Individuals">Individuals (Person)</option>
-            <option value="Club">Organization (Charity/Club/NGO)</option>
-          </select>
-
-          <!-- first and last name -->
-          <div style="display: flex; gap: 1rem;">
-            <div class="authElement">
-              <label for="FirstName">First Name</label>
-              <input type="text" name="name" id="" placeholder="John" />
-            </div>
-            <div class="authElement">
-              <label for="LastName">Last Name</label>
-              <input type="text" name="name" id="" placeholder="Doe" />
-            </div>
-          </div>
-
-          <div  class="authElement" style="display: none;">
-            <label for="clubName">Club Name</label>
-            <input type="text" name="name" id="" placeholder="Save Tigers" />
-          </div>
-
-          <div class="authElement">
-            <label for="Email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id=""
-              placeholder="john@gmail.com"
-            />
-          </div>
-
-          <div class="authElement">
-            <label for="Password">Password</label>
-            <input
-              type="password"
-              name="Password"
-              id=""
-              placeholder="********"
-            />
-            <svg style=" cursor: pointer; user-select: none; position:relative; right: -21rem; top: -1.1rem;"
+      <div id="authCard">
+        <!-- left side -->
+        <div class="authCard_left">
+          <!-- button and sign up -->
+          <div class="header">
+            <svg 
+            id="backButton"
               stroke="currentColor"
               fill="currentColor"
               stroke-width="0"
-              viewBox="0 0 640 512"
-              class="togglePassword_icon"
+              viewBox="0 0 512 512"
               height="1em"
               width="1em"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"
+                d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 288 480 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-370.7 0 73.4-73.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-128 128z"
               ></path>
             </svg>
+            
+            <h1>Sign up</h1>
           </div>
-          <button>Sign up</button>
-        </form>
-      </div>
 
-      <!-- right side -->
-      <div style="width: 100%; max-width: 350px; flex-grow:1 ; position: relative; display: flex; flex-direction: column;">
-        <div style="position: absolute; top: 12px; left: 12px; display: flex; flex-direction: column; row-gap: 7px;">
+          <form action="#" class="authForm">
+            <div class="authDropdown">
+
+            <div class="authElement">
+              <select class="selectBox" name="userType" id="userType">
+                <option value="Individuals">Individuals (Person)</option>
+                <option value="Club">Organization (Charity/Club/NGO)</option>
+            </select>
+                </div>
+            </div>
+
+            
+
+            <!-- first and last name -->
+            <div id="NamingDiv" class="nameDiv">
+              <div class="authElement">
+                <label class="label" for="FirstName">First Name</label>
+                <input class="input" type="text" name="name" id="" placeholder="John" />
+              </div>
+              <div class="authElement">
+                <label class="label" for="LastName">Last Name</label>
+                <input class="input" type="text" name="name" id="" placeholder="Doe" />
+              </div>
+            </div>
+
+            <div id="clubDiv" class="authElement" style="display: none;">
+              <label class="label" for="clubName">Club Name</label>
+              <input class="input" type="text" name="name" id="" placeholder="Save Tigers" />
+            </div>
+
+            <div class="authElement">
+              <label class="label" for="Email">Email</label>
+              <input class="input"
+                type="email"
+                name="email"
+                id=""
+                placeholder="john@gmail.com"
+              />
+            </div>
+
+            <div class="authElement">
+              <label class="label" for="Password">Password</label>
+              <input class="input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="********"
+              />
+              <svg
+              id="togglePassword"
+                class="hidePassword"
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                class="togglePassword_icon"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c8.4-19.3 10.6-41.4 4.8-63.3c-11.1-41.5-47.8-69.4-88.6-71.1c-5.8-.2-9.2 6.1-7.4 11.7c2.1 6.4 3.3 13.2 3.3 20.3c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zM373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5L373 389.9z"
+                ></path>
+              </svg>
+            </div>
+            <button>Sign up</button>
+          </form>
+        </div>
+
+        <!-- middle side for mobile -->
+        <div class="signup_or">
+          <hr><span>OR</span><hr>
+       </div>
+       
+        <!-- right side -->
+        <div class="authCard_right">
+          <div class="authRightCardButtons">
             <button>
-                <svg
-                  stroke="currentColor"
-                  fill="currentColor"
-                  stroke-width="0"
-                  version="1.1"
-                  x="0px"
-                  y="0px"
-                  viewBox="0 0 48 48"
-                  enable-background="new 0 0 48 48"
-                  height="1em"
-                  width="1em"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style="font-size: 18px; margin-right: 0.7rem"
-                >
-                  <path
-                    fill="#FFC107"
-                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
+              <svg 
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 48 48"
+                enable-background="new 0 0 48 48"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+                style="font-size: 18px; margin-right: 0.7rem"
+              >
+                <path
+                  fill="#FFC107"
+                  d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12
                       c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24
                       c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
-                  ></path>
-                  <path
-                    fill="#FF3D00"
-                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
+                ></path>
+                <path
+                  fill="#FF3D00"
+                  d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657
                       C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
-                  ></path>
-                  <path
-                    fill="#4CAF50"
-                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
+                ></path>
+                <path
+                  fill="#4CAF50"
+                  d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36
                       c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
-                  ></path>
-                  <path
-                    fill="#1976D2"
-                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
+                ></path>
+                <path
+                  fill="#1976D2"
+                  d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571
                       c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
-                  ></path>
-                </svg>
-                "Continue with Google"
-              </button>
-              <button>Have an account? Login</button>
+                ></path>
+              </svg>
+              Continue with Google
+            </button>
+            <button>Have an account? Login</button>
+          </div>
+
+          <img
+            class="banner"
+            src="https://milaan.vercel.app/assets/authbanner-e5c7e6d6.png"
+            alt="Login-Signup-Banner"
+          />
         </div>
-        
-        <img style="width: 100%; height: 100%; object-fit: cover; "
-          src="https://milaan.vercel.app/assets/authbanner-e5c7e6d6.png"
-          alt="Login-Signup-Banner"
-        />
+
       </div>
     </div>
-</div>
+
+    <script src="./signUpJS.js   "></script>
   </body>
 </html>
