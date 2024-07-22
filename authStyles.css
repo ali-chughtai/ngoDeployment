@@ -5,6 +5,7 @@
   padding: 0;
   background-color: #fffcf7;
 }
+/* adding comments to check if git is working properly or not */
 #mainDiv {
   display: flex;
   flex-direction: column;
