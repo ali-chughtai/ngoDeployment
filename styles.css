@@ -80,10 +80,18 @@ nav #drawerLogoDiv {
   top: 0;
   left: 0;
   max-width: fit-content;
-
+  display: flex;
   flex-direction: column;
   gap: 7rem;
-  display: none !important;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 10px 0 50px -10px rgba(0, 0, 0, 0.5);
+}
+
+#mobileDrawer.open {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 #mobileDrawer #DrawerCloseButton {

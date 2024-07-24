@@ -34,22 +34,24 @@ document.getElementById("SignUpButton").addEventListener('click', function() {
     window.location.href = "./signUp.html";
 });
 
-document.getElementById("DrawerCloseButton").addEventListener("click",function(){
+document.getElementById("drawerLogoDiv").addEventListener("click", function() {
     var div = document.getElementById("mobileDrawer");
-    div.style.display = 'none';
-})
+    div.classList.add('open');
+});
 
-document.getElementById("drawerLogoDiv").addEventListener("click",function(){
+document.getElementById("DrawerCloseButton").addEventListener("click", function() {
     var div = document.getElementById("mobileDrawer");
-    div.style.setProperty('display', 'flex', 'important');
-})
+    div.classList.remove('open');
+});
 
 document.addEventListener("click", function(event) {
     var drawer = document.getElementById("mobileDrawer");
     var drawerLogo = document.getElementById("drawerLogoDiv");
 
+    // Check if the click was outside the drawer and outside the drawer icon
     if (!drawer.contains(event.target) && !drawerLogo.contains(event.target)) {
-        drawer.style.setProperty('display', 'none', 'important');
+        drawer.classList.remove('open');
     }
-});
+}
+)
 
