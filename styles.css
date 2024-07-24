@@ -99,6 +99,11 @@ nav #drawerLogoDiv {
   list-style: none;
 }
 
+#mobileDrawer  a {
+  color: #000;
+  /* padding-left: -100px; */
+}
+
 main #mainDiv {
   width: 1200px;
   /* min-width: 80%; */
