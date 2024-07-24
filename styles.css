@@ -215,6 +215,7 @@ footer a:hover {
 footer li {
   list-style: none;
 }
+
 footer #Socials {
   display: flex;
   gap: 1rem;
@@ -230,6 +231,8 @@ footer #Socials svg:hover {
 }
 footer h3 {
   color: #dedede;
+ padding-left: 2.5rem;
+
 }
 footer div li img {
   width: 25px;
@@ -348,7 +351,6 @@ footer .item6 {
   }
   #mobileFooter {
     width: 30.9rem;
-    /* max-width: 1089px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,18 +358,16 @@ footer .item6 {
   }
   #mobileFooter .item2 {
     display: flex;
-    /* background-color: #b8b8b8; */
-    /* gap: 5rem; */
     justify-content: space-between;
   }
   #mobileFooter .item2 {
-    /* background-color: #8c321b; */
     display: flex;
     justify-content: flex-start;
   }
-
+  #mobileFooter .item4 {
+    padding-right: 3.5rem;
+  }
   #mobileFooter .item5 {
-    /* background-color: white; */
     display: flex;
   }
 }
