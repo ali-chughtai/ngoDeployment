@@ -33,3 +33,23 @@ function scrollToTop() {
 document.getElementById("SignUpButton").addEventListener('click', function() {
     window.location.href = "./signUp.html";
 });
+
+document.getElementById("DrawerCloseButton").addEventListener("click",function(){
+    var div = document.getElementById("mobileDrawer");
+    div.style.display = 'none';
+})
+
+document.getElementById("drawerLogoDiv").addEventListener("click",function(){
+    var div = document.getElementById("mobileDrawer");
+    div.style.setProperty('display', 'flex', 'important');
+})
+
+document.addEventListener("click", function(event) {
+    var drawer = document.getElementById("mobileDrawer");
+    var drawerLogo = document.getElementById("drawerLogoDiv");
+
+    if (!drawer.contains(event.target) && !drawerLogo.contains(event.target)) {
+        drawer.style.setProperty('display', 'none', 'important');
+    }
+});
+

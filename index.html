@@ -2,14 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
     <title>NgoWorlds | Clubs</title>
   </head>
 
   <body>
     <div class="refrenceButton">
-      <svg onclick="scrollToTop(); handleScrollMobile();" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"></path></svg>
+      <svg
+        onclick="scrollToTop(); handleScrollMobile();"
+        stroke="currentColor"
+        fill="currentColor"
+        stroke-width="0"
+        viewBox="0 0 512 512"
+        class="icon"
+        height="1em"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 217.9L383 345c9.4 9.4 24.6 9.4 33.9 0 9.4-9.4 9.3-24.6 0-34L273 167c-9.1-9.1-23.7-9.3-33.1-.7L95 310.9c-4.7 4.7-7 10.9-7 17s2.3 12.3 7 17c9.4 9.4 24.6 9.4 33.9 0l127.1-127z"
+        ></path>
+      </svg>
     </div>
     <nav>
       <div id="navLogo">
@@ -35,6 +49,30 @@
         <img id="drawerImage" src="./menu (2).png" alt="Drawer-Logo" />
       </div>
     </nav>
+
+    
+    <div  id="mobileDrawer"> 
+      <div style="display: flex; gap: 7rem; padding: 5px 5px;">
+        <img
+        src="https://milaan.vercel.app/assets/MilanNavBrand-523ddee2.svg"
+        alt="Ngo-World-Logo"
+      /><button id="DrawerCloseButton" >x</button>
+      </div>
+        <ul style="display: flex; flex-direction: column; gap: 2rem;">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Clubs">Clubs</a></li>
+          <li><a href="#Trending">Trending</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#Shop">Shops</a></li>
+          <li><a href="#Profile">Profile</a></li>
+          <li><a href="#Settings">Settings</a></li>
+          <li><a href="#SignOut">Sign out</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+
     <main>
       <div id="mainDiv">
         <div class="card">
@@ -129,10 +167,10 @@
             </div>
             <div id="UpperCardHeadings">
               <h2>Tommorows Foundation</h2>
-          <p>
-            To be responsible and confident individuals capable of achieving
-            their dreams.
-          </p>
+              <p>
+                To be responsible and confident individuals capable of achieving
+                their dreams.
+              </p>
             </div>
           </div>
 
@@ -210,7 +248,7 @@
             <div id="UpperCardHeadings">
               <h2>Dharward NGO</h2>
               <p>Dharwad ka bhaala.</p>
-                </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -248,7 +286,7 @@
             <div id="UpperCardHeadings">
               <h2>Michelle Frye</h2>
               <p>Food for everyone, good for all!</p>
-                    </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -286,7 +324,7 @@
             <div id="UpperCardHeadings">
               <h2>TechNode</h2>
               <p>Open Sorcery.</p>
-                        </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -324,7 +362,7 @@
             <div id="UpperCardHeadings">
               <h2>Amity Club</h2>
               <p>A place for the ameties!</p>
-                            </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -363,7 +401,7 @@
             <div id="UpperCardHeadings">
               <h2>Simpsons</h2>
               <p>A dynamic platform desinged foster collaboration.</p>
-                                </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -390,7 +428,6 @@
           </div>
         </div>
 
-        
         <div class="card">
           <div class="upperCard">
             <div id="clubBannerDiv">
@@ -403,7 +440,7 @@
             <div id="UpperCardHeadings">
               <h2>Eagle Club</h2>
               <p>Removing the use of plastics entirely from the earth.</p>
-                            </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -442,7 +479,7 @@
             <div id="UpperCardHeadings">
               <h2>Tamal Goyel</h2>
               <p>An initiative to conserve the rare Masai Mara.</p>
-                                </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -481,7 +518,7 @@
             <div id="UpperCardHeadings">
               <h2>Gilfoyle</h2>
               <p>For the greater good.</p>
-                                    </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -508,7 +545,6 @@
           </div>
         </div>
 
-        
         <div class="card">
           <div class="upperCard">
             <div id="clubBannerDiv">
@@ -521,7 +557,7 @@
             <div id="UpperCardHeadings">
               <h2>Save Tigers</h2>
               <p>A government initiative to save tigers.</p>
-                                        </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -560,7 +596,7 @@
             <div id="UpperCardHeadings">
               <h2>The Life Corp</h2>
               <p>An initiative to conserve and benefit everyone's life.</p>
-                                            </div>
+            </div>
           </div>
 
           <div class="innerDiv">
@@ -586,16 +622,115 @@
             <button>➔</button>
           </div>
         </div>
-
       </div>
     </main>
 
-  <footer class="footerClass" id="mobileFooter">
-    <div class="item1">
-      <img src="https://milaan.vercel.app/assets/MilanNavBrand-523ddee2.svg" alt="NGO-World-Logo" />
-    </div>
-    <div class="item2">
-      <div>
+    <footer class="footerClass" id="mobileFooter">
+      <div class="item1">
+        <img
+          src="https://milaan.vercel.app/assets/MilanNavBrand-523ddee2.svg"
+          alt="NGO-World-Logo"
+        />
+      </div>
+      <div class="item2">
+        <div>
+          <h3>Quick Starts</h3>
+          <ul>
+            <li><a href="#Trending">Trending</a></li>
+            <li><a href="#Clubs">Clubs</a></li>
+            <li><a href="#Shops">Shops</a></li>
+            <li><a href="./signUp.html">Sign Up</a></li>
+            <li><a href="#Events">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Resources</h3>
+          <ul>
+            <li><a href="#Github">Github</a></li>
+            <li><a href="#SetupFrontend">Setup Frontend</a></li>
+            <li><a href="#SetupBackend">Setup Backend</a></li>
+            <li><a href="#DockersResources">Dockers Resources</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item4" id="mobilePolicies">
+        <ul>
+          <li><a href="#Terms">Terms</a></li>
+          |
+          <li><a href="#Privacy">Privacy</a></li>
+          |
+          <li><a href="#Cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="item5" id="Socials">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 448 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          role="img"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title></title>
+          <path
+            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+          ></path>
+        </svg>
+      </div>
+    </footer>
+
+    <footer class="footerClass" id="desktopFooter">
+      <div class="item1">
+        <img
+          src="https://milaan.vercel.app/assets/MilanNavBrand-523ddee2.svg"
+          alt="NGO-World-Logo"
+        />
+      </div>
+      <div class="item6"></div>
+      <div class="item2">
         <h3>Quick Starts</h3>
         <ul>
           <li><a href="#Trending">Trending</a></li>
@@ -605,80 +740,89 @@
           <li><a href="#Events">Events</a></li>
         </ul>
       </div>
-      
-    <div><h3>Resources</h3>
-      <ul>
-        <li><a href="#Github">Github</a></li>
-        <li><a href="#SetupFrontend">Setup Frontend</a></li>
-        <li><a href="#SetupBackend">Setup Backend</a></li>
-        <li><a href="#DockersResources">Dockers Resources</a></li>
-      </ul>
-    </div>
-    </div>
-
-
-    <div class="item4" id="mobilePolicies">
-      <ul>
-        <li><a href="#Terms">Terms</a></li>|
-        <li><a href="#Privacy">Privacy</a></li>|
-        <li><a href="#Cookies">Cookies</a></li>
-      </ul>
-    </div>
-    <div class="item5" id="Socials">
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg>
-    </div>
-  </footer>
-
-  <footer class="footerClass" id="desktopFooter">
-    <div class="item1">
-      <img src="https://milaan.vercel.app/assets/MilanNavBrand-523ddee2.svg" alt="NGO-World-Logo" />
-    </div>
-    <div class="item6"></div>
-    <div class="item2">
-      <h3>Quick Starts</h3>
-      <ul>
-        <li><a href="#Trending">Trending</a></li>
-        <li><a href="#Clubs">Clubs</a></li>
-        <li><a href="#Shops">Shops</a></li>
-        <li><a href="./signUp.html">Sign Up</a></li>
-        <li><a href="#Events">Events</a></li>
-      </ul>
-    </div>
-    <div class="item3">
-      <h3>Resources</h3>
-      <ul>
-        <li><a href="#Github">Github</a></li>
-        <li><a href="#SetupFrontend">Setup Frontend</a></li>
-        <li><a href="#SetupBackend">Setup Backend</a></li>
-        <li><a href="#DockersResources">Dockers Resources</a></li>
-      </ul>
-    </div>
-    <div  id="divPolicies">
-      <h3>Policies</h3>
-      <ul>
-        <li><a href="#Terms">Terms</a></li>
-        <li><a href="#Privacy">Privacy</a></li>
-        <li><a href="#Cookies">Cookies</a></li>
-      </ul>
-    </div>
-    <div class="item4" id="mobilePolicies">
-      <ul>
-        <li><a href="#Terms">Terms</a></li>|
-        <li><a href="#Privacy">Privacy</a></li>|
-        <li><a href="#Cookies">Cookies</a></li>
-      </ul>
-    </div>
-    <div class="item5" id="Socials">
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title></title><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"></path></svg>
-    </div>
-  </footer>
-  <script src="./script.js" ></script>
-
+      <div class="item3">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#Github">Github</a></li>
+          <li><a href="#SetupFrontend">Setup Frontend</a></li>
+          <li><a href="#SetupBackend">Setup Backend</a></li>
+          <li><a href="#DockersResources">Dockers Resources</a></li>
+        </ul>
+      </div>
+      <div id="divPolicies">
+        <h3>Policies</h3>
+        <ul>
+          <li><a href="#Terms">Terms</a></li>
+          <li><a href="#Privacy">Privacy</a></li>
+          <li><a href="#Cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="item4" id="mobilePolicies">
+        <ul>
+          <li><a href="#Terms">Terms</a></li>
+          |
+          <li><a href="#Privacy">Privacy</a></li>
+          |
+          <li><a href="#Cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="item5" id="Socials">
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 448 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 512 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 496 512"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+          ></path>
+        </svg>
+        <svg
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          role="img"
+          viewBox="0 0 24 24"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title></title>
+          <path
+            d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+          ></path>
+        </svg>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

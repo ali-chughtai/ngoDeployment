@@ -136,6 +136,7 @@
   position: absolute;
   right: 15px;
   top: 33px;
+  background-color: none;
 }
 
 .authCard_left .authForm button {
