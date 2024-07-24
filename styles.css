@@ -387,9 +387,12 @@ footer .item6 {
     display: flex;
   }
   main .upperCard #UpperCardHeadings{
-    justify-content: left;
+    display: block;
   }
   main .upperCard #UpperCardHeadings p{
+    text-align: left;
+  }
+  main .upperCard #UpperCardHeadings h6{
     text-align: left;
   }
 }
